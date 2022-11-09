@@ -1,11 +1,8 @@
 import { type NextPage } from "next";
 import Head from "next/head";
-import Link from "next/link";
-import PreviousMap from "postcss/lib/previous-map";
-import { useState } from "react";
 import { trpc } from "../utils/trpc";
-import { AppRouter } from "../server/trpc/router/_app";
-import { inferProcedureInput } from '@trpc/server';
+import type { AppRouter } from "../server/trpc/router/_app";
+import type { inferProcedureInput } from '@trpc/server';
 import { Fragment } from 'react';
 
 const Home: NextPage = () => {
@@ -67,7 +64,6 @@ const Home: NextPage = () => {
       </form>
       </div>
       </div>
-
     </main>     
     </>
   );

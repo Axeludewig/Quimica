@@ -1,4 +1,3 @@
-import * as trpc from '@trpc/server';
 import { z } from 'zod';
 import { router, publicProcedure } from '../trpc';
 import { Prisma } from '@prisma/client';
@@ -23,7 +22,7 @@ export const itemRouter = router({
       });
       return item;
   }),
-  
+
   list: publicProcedure
   .input(
     z.object({
